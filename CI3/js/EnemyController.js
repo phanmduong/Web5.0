@@ -24,6 +24,10 @@ class EnemyController {
 
         this.configs.centerX = (this.configs.minX + this.configs.maxX) / 2;
         this.configs.movementDistance = (this.configs.maxX - this.configs.minX) / 2;
+        if (configs.radius != 0) {
+            this.sprite.body.setCircle(configs.radius, this.sprite.width / 2 - configs.radius,
+                this.sprite.height / 2 - configs.radius);
+        }
     }
 
     update() {
@@ -70,15 +74,30 @@ class EnemyController {
     }
 
     createBullet(x, y) {
-        new BulletController(
-            this.sprite.position,
-            'EnemyBulletType1.png',
-            new Phaser.Point(x, y),
-            {
-                bulletGroup: Nakama.bulletEnemyGroup,
-                bulletSpeed: this.configs.bulletSpeed
-            }
-        )
-        ;
+        switch (this.configs.bulletType){
+            case '1':
+                new BulletType1Enemy(this.sprite.position,new Phaser.Point(x, y),
+                    {
+                        bulletStrength: this.configs.bulletStrength,
+                        bulletSpeed: this.configs.bulletSpeed
+                    });
+                break;
+            case '2':
+                new BulletType2Enemy(this.sprite.position,new Phaser.Point(x, y),
+                    {
+                        bulletStrength: this.configs.bulletStrength,
+                        bulletSpeed: this.configs.bulletSpeed
+                    });
+                break;
+            case '3':
+                new BulletType3Enemy(this.sprite.position,new Phaser.Point(x, y),
+                    {
+                        bulletStrength: this.configs.bulletStrength,
+                        bulletSpeed: this.configs.bulletSpeed
+                    });
+                break
+            default:
+        }
+
     }
 }

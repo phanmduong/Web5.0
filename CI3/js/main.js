@@ -1,6 +1,6 @@
 var Nakama = {};
 Nakama.configs = {
-    bulletPlayerSpeed: 1500,
+    bulletPlayerSpeed: 1000,
     shipSpeed: 500,
     enemySpeed: 500,
 }
@@ -40,9 +40,11 @@ var create = function () {
 
     Nakama.bulletPlayerGroup = Nakama.game.add.physicsGroup();
     Nakama.bulletEnemyGroup = Nakama.game.add.physicsGroup();
+    Nakama.missileGroup = Nakama.game.add.physicsGroup();
     Nakama.playerGroup = Nakama.game.add.physicsGroup();
     Nakama.enemyGroup = Nakama.game.add.physicsGroup();
 
+    Nakama.missiles = [];
     Nakama.players = [];
 
     Nakama.players.push(new ShipController(200, 800, "Spaceship1-Player.png", {
@@ -53,7 +55,13 @@ var create = function () {
         fire: Phaser.Keyboard.SPACEBAR,
         numberWayBullet: 1,
         cooldown: 0.1,
-        health : 5
+        health: 10,
+        bulletStrength: 1,
+        bulletType: '3',
+        frameNameDefault: 'Spaceship1-Player.png',
+        frameNameLeft: 'Spaceship1Left-Player.png',
+        frameNameRight: 'Spaceship1Right-Player.png',
+        radius: 32
     }));
 
     Nakama.players.push(new ShipController(400, 800, "Spaceship1-Partner.png", {
@@ -64,28 +72,40 @@ var create = function () {
         fire: Phaser.Keyboard.F,
         numberWayBullet: 5,
         cooldown: 0.1,
-        health : 5
+        health: 10,
+        bulletStrength: 2,
+        bulletType: '2',
+        frameNameDefault: 'Spaceship1-Partner.png',
+        frameNameLeft: 'Spaceship1Left-Partner.png',
+        frameNameRight: 'Spaceship1Right-Partner.png',
+        radius: 32
     }));
 
     Nakama.enemies = [];
 
     Nakama.enemies.push(new EnemyController(new Phaser.Point(200, 100), "EnemyType1.png", {
         enemySpeed: Nakama.configs.enemySpeed,
+        bulletType: '1',
         bulletSpeed: 200,
+        bulletStrength: 1,
         cooldown: 0.5,
         minX: 100,
         maxX: 540,
         tweenTime: 2,
-        health: 30
+        health: 20,
+        radius: 20
     }));
     Nakama.enemies.push(new EnemyController(new Phaser.Point(800, 300), "EnemyType2.png", {
         enemySpeed: Nakama.configs.enemySpeed,
+        bulletType: '2',
+        bulletStrength: 2,
         bulletSpeed: 300,
         cooldown: 0.5,
         minX: 200,
         maxX: 440,
         tweenTime: 3,
-        health: 30
+        health: 20,
+        radius: 28
     }));
 
 }
@@ -93,24 +113,25 @@ var create = function () {
 
 // update game state each frame
 var update = function () {
+    Nakama.game.debug.body(Nakama.bulletPlayerGroup);
 
-    Nakama.game.physics.arcade.overlap(Nakama.bulletPlayerGroup, Nakama.enemyGroup, collisionBulletPlayerAndEnemy);
+    Nakama.game.physics.arcade.overlap(Nakama.bulletPlayerGroup, Nakama.enemyGroup, collisionBulletAndActor);
     Nakama.game.physics.arcade.overlap(Nakama.playerGroup, Nakama.enemyGroup, collisionShipAndEnemy);
-    Nakama.game.physics.arcade.overlap(Nakama.bulletEnemyGroup, Nakama.playerGroup, collisionBulletEnemyAndPlayer);
+    Nakama.game.physics.arcade.overlap(Nakama.bulletEnemyGroup, Nakama.playerGroup, collisionBulletAndActor);
 
     Nakama.background.tilePosition.y += 5;
     for (var i = 0; i < Nakama.players.length; i++) {
         Nakama.players[i].update();
+        Nakama.game.debug.body(Nakama.players[i]);
     }
 
     for (var i = 0; i < Nakama.enemies.length; i++) {
         Nakama.enemies[i].update();
     }
-}
 
-var collisionBulletPlayerAndEnemy = function (bulletSprite, enemySprite) {
-    bulletSprite.kill();
-    enemySprite.damage(1);
+    for (var i = 0; i < Nakama.missiles.length; i++) {
+        if (Nakama.missiles[i].sprite.alive) Nakama.missiles[i].update();
+    }
 }
 
 var collisionShipAndEnemy = function (ship, enemy) {
@@ -118,11 +139,16 @@ var collisionShipAndEnemy = function (ship, enemy) {
     enemy.kill();
 }
 
-var collisionBulletEnemyAndPlayer = function (bulletSprite, shipSprite) {
+var collisionBulletAndActor = function (bulletSprite, actorSprite) {
     bulletSprite.kill();
-    shipSprite.damage(1);
+    actorSprite.damage(bulletSprite.bulletStrength);
 }
 
 // before camera render (mostly for debug)
 var render = function () {
+    Nakama.playerGroup.forEachAlive(renderGroup, this);
+    Nakama.enemyGroup.forEachAlive(renderGroup, this);
+    Nakama.bulletPlayerGroup.forEachAlive(renderGroup, this);
+    Nakama.bulletEnemyGroup.forEachAlive(renderGroup, this);
 }
+function renderGroup(member) {    Nakama.game.debug.body(member);}

@@ -13,8 +13,12 @@ class ShipController {
         this.sprite.health = configs.health;
 
         this.sprite.body.collideWorldBounds = true;
-        this.sprite.anchor = new Phaser.Point(0.5, 0.5);
+        this.sprite.anchor = new Phaser.Point(0, 0.5);
         this.timeSinceLastFire = 0;
+        if (configs.radius != 0) {
+            this.sprite.body.setCircle(configs.radius, this.sprite.width / 2 - configs.radius,
+                this.sprite.height / 2 - configs.radius);
+        }
 
     }
 
@@ -32,10 +36,13 @@ class ShipController {
 
             if (Nakama.keyboard.isDown(this.configs.left)) {
                 this.sprite.body.velocity.x = -Nakama.configs.shipSpeed;
+                this.sprite.frameName = this.configs.frameNameLeft;
             } else if (Nakama.keyboard.isDown(this.configs.right)) {
                 this.sprite.body.velocity.x = Nakama.configs.shipSpeed;
+                this.sprite.frameName = this.configs.frameNameRight;
             } else {
                 this.sprite.body.velocity.x = 0;
+                this.sprite.frameName = this.configs.frameNameDefault;
             }
 
             this.timeSinceLastFire += Nakama.game.time.physicsElapsed;
@@ -63,15 +70,50 @@ class ShipController {
     }
 
     createBullet(x, y) {
-        new BulletController(
-            this.sprite.position,
-            'BulletType1.png',
-            new Phaser.Point(x, y),
-            {
-                bulletGroup: Nakama.bulletPlayerGroup,
-                bulletSpeed: Nakama.configs.bulletPlayerSpeed
-            }
-        );
+        switch (this.configs.bulletType) {
+            case '1':
+                new BulletType1Player(this.sprite.position, new Phaser.Point(x, y),
+                    {
+                        bulletStrength: this.configs.bulletStrength
+                    }
+                );
+                break;
+            case '2':
+                new BulletType2Player(this.sprite.position, new Phaser.Point(x, y),
+                    {
+                        bulletStrength: this.configs.bulletStrength
+                    }
+                );
+                break;
+            case '3':
+                new BulletType3Player(this.sprite.position, new Phaser.Point(x, y),
+                    {
+                        bulletStrength: this.configs.bulletStrength
+                    }
+                );
+                break;
+            case '4':
+                var enemy = null;
+                var minDistance = 10000;
+
+                for (var i = 0; i < Nakama.enemies.length; i++) {
+                    var distance = Phaser.Math.distance(this.sprite.position.x, this.sprite.position.y, Nakama.enemies[i].sprite.position.x,
+                        Nakama.enemies[i].sprite.position.y);
+                    if (minDistance >= distance) {
+                        enemy = Nakama.enemies[i];
+                        minDistance = distance;
+                    }
+                }
+
+                Nakama.missiles.push(new MissilePlayer(this.sprite.position, enemy,
+                    {
+                        bulletStrength: this.configs.bulletStrength
+                    }
+                ));
+                break;
+            default:
+        }
+
     }
 
 }
