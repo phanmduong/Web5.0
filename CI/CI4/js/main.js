@@ -61,6 +61,7 @@ var create = function () {
 
     Nakama.missiles = [];
     Nakama.players = [];
+    Nakama.game.h
 
     Nakama.players.push(new ShipType1Controller(200, 800, 'Player', Nakama.configs.player1Controls));
 
@@ -98,7 +99,6 @@ var create = function () {
 
 // update game state each frame
 var update = function () {
-    Nakama.game.debug.body(Nakama.bulletPlayerGroup);
 
     Nakama.game.physics.arcade.overlap(Nakama.bulletPlayerGroup, Nakama.enemyGroup, collisionBulletAndActor);
     Nakama.game.physics.arcade.overlap(Nakama.playerGroup, Nakama.enemyGroup, collisionShipAndEnemy);
@@ -108,7 +108,6 @@ var update = function () {
 
     Nakama.players.forEach(function (player) {
         player.update();
-        Nakama.game.debug.body(player);
     });
 
     Nakama.enemies.forEach(function (enemy) {
