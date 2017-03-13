@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="951b59fb-c324-43d2-abbc-559548d5e0a4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Backend4/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Backend4/controllers/UsersController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Backend4/mongodb/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Backend4/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Backend4/router/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Backend1/FileUtils.js" afterPath="$PROJECT_DIR$/../Backend1/FileUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Backend1/app.js" afterPath="$PROJECT_DIR$/../Backend1/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Backend1/data.txt" afterPath="$PROJECT_DIR$/../Backend1/data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/.gitignore" afterPath="$PROJECT_DIR$/../../CI/CI1/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/Assets/NakamaAssets.tps" afterPath="$PROJECT_DIR$/../../CI/CI1/Assets/NakamaAssets.tps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/Assets/assets.json" afterPath="$PROJECT_DIR$/../../CI/CI1/Assets/assets.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/README.md" afterPath="$PROJECT_DIR$/../../CI/CI1/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/gulpfile.js" afterPath="$PROJECT_DIR$/../../CI/CI1/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/index.html" afterPath="$PROJECT_DIR$/../../CI/CI1/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/index.js" afterPath="$PROJECT_DIR$/../../CI/CI1/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/js/BulletController.js" afterPath="$PROJECT_DIR$/../../CI/CI1/js/BulletController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/js/EnemyController.js" afterPath="$PROJECT_DIR$/../../CI/CI1/js/EnemyController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/js/ShipController.js" afterPath="$PROJECT_DIR$/../../CI/CI1/js/ShipController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/js/main.js" afterPath="$PROJECT_DIR$/../../CI/CI1/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/libs/phaser.min.js" afterPath="$PROJECT_DIR$/../../CI/CI1/libs/phaser.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI1/package.json" afterPath="$PROJECT_DIR$/../../CI/CI1/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/.gitignore" afterPath="$PROJECT_DIR$/../../CI/CI2/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/Assets/NakamaAssets.tps" afterPath="$PROJECT_DIR$/../../CI/CI2/Assets/NakamaAssets.tps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/Assets/assets.json" afterPath="$PROJECT_DIR$/../../CI/CI2/Assets/assets.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/README.md" afterPath="$PROJECT_DIR$/../../CI/CI2/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/gulpfile.js" afterPath="$PROJECT_DIR$/../../CI/CI2/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/index.html" afterPath="$PROJECT_DIR$/../../CI/CI2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/index.js" afterPath="$PROJECT_DIR$/../../CI/CI2/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/js/BulletController.js" afterPath="$PROJECT_DIR$/../../CI/CI2/js/BulletController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/js/EnemyController.js" afterPath="$PROJECT_DIR$/../../CI/CI2/js/EnemyController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/js/ShipController.js" afterPath="$PROJECT_DIR$/../../CI/CI2/js/ShipController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/js/main.js" afterPath="$PROJECT_DIR$/../../CI/CI2/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/libs/phaser.min.js" afterPath="$PROJECT_DIR$/../../CI/CI2/libs/phaser.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI2/package.json" afterPath="$PROJECT_DIR$/../../CI/CI2/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/.gitignore" afterPath="$PROJECT_DIR$/../../CI/CI3/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/Assets/NakamaAssets.tps" afterPath="$PROJECT_DIR$/../../CI/CI3/Assets/NakamaAssets.tps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/Assets/assets.json" afterPath="$PROJECT_DIR$/../../CI/CI3/Assets/assets.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/README.md" afterPath="$PROJECT_DIR$/../../CI/CI3/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/gulpfile.js" afterPath="$PROJECT_DIR$/../../CI/CI3/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/index.html" afterPath="$PROJECT_DIR$/../../CI/CI3/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/index.js" afterPath="$PROJECT_DIR$/../../CI/CI3/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/BulletController.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/BulletController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType1Enemy.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType1Enemy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType1Player.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType1Player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType2Enemy.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType2Enemy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType2Player.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType2Player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType3Enemy.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType3Enemy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType3Player.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/BulletType3Player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/MissilePlayer.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/BulletType/MissilePlayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/EnemyController.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/EnemyController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/ShipController.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/ShipController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/js/main.js" afterPath="$PROJECT_DIR$/../../CI/CI3/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/libs/phaser.min.js" afterPath="$PROJECT_DIR$/../../CI/CI3/libs/phaser.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI3/package.json" afterPath="$PROJECT_DIR$/../../CI/CI3/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/.gitignore" afterPath="$PROJECT_DIR$/../../CI/CI4/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/Assets/NakamaAssets.tps" afterPath="$PROJECT_DIR$/../../CI/CI4/Assets/NakamaAssets.tps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/Assets/assets.json" afterPath="$PROJECT_DIR$/../../CI/CI4/Assets/assets.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/README.md" afterPath="$PROJECT_DIR$/../../CI/CI4/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/gulpfile.js" afterPath="$PROJECT_DIR$/../../CI/CI4/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/index.html" afterPath="$PROJECT_DIR$/../../CI/CI4/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/index.js" afterPath="$PROJECT_DIR$/../../CI/CI4/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/BulletController.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/BulletController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType1Enemy.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType1Enemy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType1Player.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType1Player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType2Enemy.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType2Enemy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType2Player.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType2Player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType3Enemy.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType3Enemy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType3Player.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/BulletType3Player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/MissilePlayer.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/BulletType/MissilePlayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/EnemyController.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/EnemyController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/Ships/ShipController.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/Ships/ShipController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/Ships/ShipType1Controller.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/Ships/ShipType1Controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/Ships/ShipType2Controller.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/Ships/ShipType2Controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/js/main.js" afterPath="$PROJECT_DIR$/../../CI/CI4/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/libs/phaser.min.js" afterPath="$PROJECT_DIR$/../../CI/CI4/libs/phaser.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/npm-debug.log" afterPath="$PROJECT_DIR$/../../CI/CI4/npm-debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CI/CI4/package.json" afterPath="$PROJECT_DIR$/../../CI/CI4/package.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="666">
+              <caret line="77" column="51" lean-forward="false" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="695" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Backend4" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="javascript.nodejs.core.library.configured.version" value="6.10.0" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="951b59fb-c324-43d2-abbc-559548d5e0a4" name="Default" comment="" />
+      <created>1488695381517</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488695381517</updated>
+      <workItem from="1488695384361" duration="219000" />
+      <workItem from="1488731910911" duration="45000" />
+      <workItem from="1488733259584" duration="2001000" />
+      <workItem from="1488856580833" duration="613000" />
+    </task>
+    <task id="LOCAL-00001" summary="homework backend BE2">
+      <created>1488695574483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1488695574483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2878000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="24" width="1366" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="homework backend BE2" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework backend BE2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="77" column="51" lean-forward="false" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
