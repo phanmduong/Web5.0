@@ -9,7 +9,8 @@ var UserController = require('./user.controller');
 router.get('/get-all', UserController.getAll);
 router.post('/create', UserController.addUser);
 router.get('/:username', UserController.getUser);
-router.put('/:username/edit', UserController.editUser);
+router.put('/:username', UserController.editUser);
+router.delete('/:username', UserController.deleteUser);
 
 
 router.post('/create', function (req, res) {

@@ -5,7 +5,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 
 module.exports = {
-    port: 8080,
+    port: 8000,
     settingExpress : function (app) {
         app.use(bodyParser.urlencoded({ extended: false }));
 

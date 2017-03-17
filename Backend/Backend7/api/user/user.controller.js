@@ -61,4 +61,12 @@ module.exports = {
                 res.end(err);
             });
     },
+
+    deleteUser: function (req,res) {
+        User.remove({username: req.params.username}).exec(function (err) {
+            if (err) res.end(err);
+            res.end('Delete user successful');
+        })
+
+    }
 };
