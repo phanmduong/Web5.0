@@ -6,7 +6,7 @@ var express = require('express');
 var router = express.Router();
 var UserController = require('./user.controller');
 
-router.get('/get-all', UserController.getAll);
+router.get('/all', UserController.getAll);
 router.post('/create', UserController.addUser);
 router.get('/:username', UserController.getUser);
 router.put('/:username/edit', UserController.editUser);

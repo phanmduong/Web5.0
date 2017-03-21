@@ -23,20 +23,22 @@ module.exports = {
         //     });
         // });
 
-        Course.find().populate({path: 'created_by',
+        Course.find().populate([{path: 'created_by',
             select: 'username password -_id'
-        }).exec(function (err, courses) {
+        },{path: 'instructor',
+            select: '-courses'
+        }]).exec(function (err, courses) {
             res.json(courses);
         });
     },
 
     getCourse: function (req, res) {
-        Course.findOne({name: req.params.course}).exec(function (err, data) {
-            console.log(data.created_by);
-            User.findOne({'_id': data['created_by']}).exec(function (err, user) {
-                data['created_by'] = user;
-                res.json(data);
-            })
+        Course.findOne({name: req.params.course}).populate([{path: 'created_by',
+            select: 'username password -_id'
+        },{path: 'instructor',
+            select: '-courses'
+        }]).exec(function (err, data) {
+            res.json(data)
         })
     },
 

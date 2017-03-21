@@ -12,7 +12,8 @@ var Course = mongoose.Schema({
     title: String,
     img: String,
     description: String,
-    created_by: {type:mongoose.Schema.Types.ObjectId, ref:'User'}
+    created_by: {type:mongoose.Schema.Types.ObjectId, ref:'User'},
+    instructor: [{type:mongoose.Schema.Types.ObjectId, ref:'Instructor'}]
 });
 
 module.exports = mongoose.model('Course', Course);
