@@ -51,7 +51,7 @@ module.exports = {
     },
 
     getUser: function (req, res) {
-        User.findOne({username: req.params.username}, {_id: 0, __v: 0}).populate('created_course')
+        User.findOne({username: req.params.username.ah}, {_id: 0, __v: 0}).populate('created_course')
             .exec((err, user)=>{
             if (err) res.end(err);
                 if (user) {
