@@ -18,12 +18,13 @@ module.exports = {
                 if (user) {
                     res.end('Username is exist');
                 } else {
-                    newUser.save()
-                        .then(function (doc) {
-                            res.json(doc);
-                        }, function (err) {
-                            res.end(err);
-                        })
+                    newUser.save(function (err, user) {
+                        if (err){
+                            res.json({status: false, message: err});
+                        } else {
+                            res.json({status: true, message: "Create successful"});
+                        }
+                    })
                 }
             }, (err) => {
                 res.end(err);

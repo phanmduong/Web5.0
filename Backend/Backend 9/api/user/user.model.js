@@ -28,7 +28,7 @@ var user = mongoose.Schema({
         required: true
     },
     permission:{
-        type: {},
+        type: [],
         required: true
     }
 });
