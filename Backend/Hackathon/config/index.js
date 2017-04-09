@@ -12,8 +12,8 @@ module.exports = {
     },
     mongoUri : 'mongodb://localhost/web5',
     secret: 'secret',
-    limitPost: 2,
-    // roleRequest: ['guest', 'user', 'admin'],
+    limitPost: 15,
+    roleRequest: ['guest', 'user', 'admin'],
     // rolePermission: ['view', 'edit', 'create', 'delete'],
     // indexPermission: {course: 0, instructor: 1},
 };

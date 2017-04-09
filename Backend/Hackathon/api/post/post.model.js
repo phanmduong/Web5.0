@@ -6,12 +6,46 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var post = mongoose.Schema({
-    content: String,
-    created_by: {
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'User'
-    }
-},{timestamps: true });
+        content: {
+            type: String,
+            required: true
+        },
+        views: Number,
+        imageUrl: String,
+        likes: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User'
+        }],
+        title: {
+            type: String,
+            required: true
+        },
+        comments: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Comment'
+        }],
+        author: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User'
+        },
+        category: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Category'
+        },
+        isLike: Boolean
+    },
+    {
+        toObject: {
+            virtuals: true
+        },
+        toJSON: {
+            virtuals: true
+        },
+        timestamps: true
+    });
+post.virtual('plus').get(function () {
+    return this.likes.length;
+});
 
 module.exports = mongoose.model('Post', post);
 

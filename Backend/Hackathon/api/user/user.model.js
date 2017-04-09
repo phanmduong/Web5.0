@@ -23,13 +23,37 @@ var user = mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Post'
         }
-    ]
+    ],
+    role: String
 });
 
 // user.plugin(findOrCreate);
 /**
  * Pre-save hook
  */
+
+user.pre('update', function (next) {
+   // Handle new/update passwords
+    if (!this.isModified('password')) {
+        return next();
+    }
+    var obj = this;
+// Make salt with a callback
+    this.makeSalt(function (saltErr, salt) {
+        if (saltErr) {
+            return next(saltErr);
+        }
+        obj.salt = salt;
+        obj.encryptPassword(obj.password, function (encryptErr, hashedPassword) {
+            if (encryptErr) {
+                return next(encryptErr);
+            }
+            obj.password = hashedPassword;
+            next();
+        });
+    });
+});
+
 user.pre('save', function (next) {
 // Handle new/update passwords
     if (!this.isModified('password')) {

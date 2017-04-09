@@ -32,7 +32,11 @@ module.exports = {
     },
 
     editUser: function (req, res) {
-        User.update({username: req.params.username}, req.body, function (err) {
+        User.update({username: req.params.username}, {$set:{
+            password: res.body.password,
+            name: res.body.name,
+            age: res.body.age
+        }}, function (err) {
             if (err) {
                 res.json({status: false, message: err});
             } else {
