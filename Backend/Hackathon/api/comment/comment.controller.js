@@ -8,10 +8,10 @@ var config = require('../../config')
 
 module.exports = {
     getComment: function (req, res) {
-        Comment.fineOne(req.params.commentId).select('-_id -updatedAt -createdAt -__v')
+        Comment.findById(req.params.commentId).select('-_id -updatedAt -createdAt -__v')
             .populate([{
                 path: 'post',
-                select: '-_id -__v'
+                select: '-_id -comments -__v'
             }, {
                 path: 'created_by',
                 select: '-_id -password -salt -created_post -__v'

@@ -24,10 +24,10 @@ module.exports = {
                 path: 'category',
                 select: '-post -__v'
             }, {
-                path: 'like',
+                path: 'likes',
                 select: '-_id -password -salt -created_post -__v'
             }, {
-                path: 'comment',
+                path: 'comments',
                 select: '-__v'
             }
             ])
@@ -61,6 +61,9 @@ module.exports = {
             }, {
                 path: 'comments',
                 select: '-__v -post'
+            }, {
+                path: 'comments.created_by',
+                select: '-_id -password -salt -created_post -__v'
             }
             ])
             .exec(function (err, data) {
