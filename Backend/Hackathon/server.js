@@ -9,7 +9,6 @@ var app = express();
 config.settingExpress(app);
 var routes = require('./routes.js')(app);
 
-
 mongoose.connect(config.mongoUri);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
