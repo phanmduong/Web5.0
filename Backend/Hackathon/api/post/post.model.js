@@ -10,7 +10,7 @@ var post = mongoose.Schema({
             required: true
         },
         views: Number,
-        imageUrl: String,
+        img: String,
         likes: [{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User'

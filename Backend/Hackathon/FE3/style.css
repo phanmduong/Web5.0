@@ -1,0 +1,172 @@
+body{
+    background-color: #e1e1e1;
+}
+.col-md-3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.col-md-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+
+.right-inner-addon input {
+    padding-right: 30px;
+}
+
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+.camera{
+    background-color: dodgerblue;
+}
+
+.color-camera{
+    color: white;
+}
+
+.root{
+    margin-top: 140px;
+}
+
+
+.post{
+}
+
+.post-image{
+    width: 100%;
+    height: auto;
+}
+
+.container-post{
+    background-color: white;
+}
+
+.description-post{
+    padding: 10px;
+}
+
+.info{
+    position: relative;
+    padding: 10px;
+}
+
+.avatar-post{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    display: inline-block;
+}
+.title-post{
+    position: absolute;
+    top:50%;
+    transform: translate(0%, -50%);
+    display: inline-block;
+    padding-left: 15px;
+}
+.title{
+    font-weight: bold;
+    font-size: large;
+}
+
+.sub-title{
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.image-content .functions {
+    display: none;
+}
+
+.image-content:hover .functions {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(210, 210, 210, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.functions {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.functions .plus-func {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.functions i {
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    display: block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.plus-func i {
+    font-size: 22px;
+}
+
+.plus-func i:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgba(210, 210, 210, 0.8);
+}
+
+.functions .view-count {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.functions .publish-time {
+    transform: translate(-50%,0);
+    margin-bottom: 15px;
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.functions .plus-count {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 992px) {
+    .col-md-6{
+        min-height: 60px;
+    }
+    .root{
+        margin-top: 60px;
+    }
+}
+

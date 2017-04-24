@@ -6,6 +6,8 @@ var config = require('./config/index.js');
 var mongoose = require('mongoose');
 
 var app = express();
+
+app.use('/',express.static('FE3'));
 config.settingExpress(app);
 var routes = require('./routes.js')(app);
 

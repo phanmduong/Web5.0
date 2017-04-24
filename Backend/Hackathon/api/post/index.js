@@ -8,6 +8,7 @@ var PostController = require('./post.controller.js');
 var CommentController = require('../comment/comment.controller.js');
 var auth = require('../auth/auth.service.js');
 router.get('/all', auth.authentication(),PostController.getAll);
+router.get('/getAll', PostController.all);
 router.post('/create', auth.authentication(), PostController.create);
 router.put('/like/:postId', auth.authentication(), PostController.like);
 router.post('/comment/:postId', auth.authentication(), CommentController.create);

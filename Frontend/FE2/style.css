@@ -1,34 +1,72 @@
-ul {
-    position: absolute;
-    background: blue;
+/*ul {*/
+    /*position: absolute;*/
+    /*background: blue;*/
+    /*color: white;*/
+    /*padding-left: 0;*/
+/*}*/
+
+/*li {*/
+    /*display: inline-block;*/
+    /*padding: 5px 10px;*/
+    /*position: relative;*/
+/*}*/
+
+/*li:hover {*/
+    /*background: dodgerblue;*/
+
+/*}*/
+
+/*li:hover>ul {*/
+    /*display: block;*/
+    /*margin-left: -10px;*/
+/*}*/
+
+/*ul ul {*/
+    /*display: none;*/
+    /*margin: 0;*/
+    /*width: 100%;*/
+/*}*/
+
+/*ul ul ul{*/
+    /*left: 100%;*/
+    /*margin-left: 0!important;*/
+    /*top: 0%;*/
+/*}*/
+.menu {
+    background: deepskyblue;
+    text-align: center;
     color: white;
-    padding-left: 0;
 }
 
-li {
+.menu span{
+    width: 100px;
     display: inline-block;
-    padding: 5px 10px;
+    line-height: 30px;
+    background: brown;
+    font-weight: bold;
+    cursor: pointer;
     position: relative;
 }
 
-li:hover {
-    background: dodgerblue;
+.menu span:hover{
+    background: teal;
 
 }
 
-li:hover>ul {
-    display: block;
-    margin-left: -10px;
-}
-
-ul ul {
+.menu nav{
     display: none;
-    margin: 0;
+    position: absolute;
     width: 100%;
 }
 
-ul ul ul{
+.menu nav nav{
+    top: 0;
     left: 100%;
-    margin-left: 0!important;
-    top: 0%;
 }
+
+.menu span:hover > nav{
+    display: block;
+}
+
+/*progressive-enhancement*/
+/*graceful-degration*/

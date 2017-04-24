@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="search">
+                    <div class="right-inner-addon">
+                        <i class="fa fa-search"></i>
+                        <input type="search"
+                               class="form-control"
+                               placeholder="Enter your search"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="logo">
+                    <img src="img/logo.png"/>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="menu">
+                    <div class="input-group">
+                        <span class="input-group-addon camera"><i class="fa fa-camera color-camera"></i></span>
+                        <span class="input-group-addon"><i class="fa fa-bars"></i></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</nav>
+<div class="container root">
+    <div class="row" id="content">
+
+    </div>
+    <script id="girl-template" type="text/x-handlebars-template">
+        {{#each result}}
+        <div class="col-md-3 post">
+            <div class="container-post">
+            <div class="image">
+            <div class="image-content">
+            <img class="post-image" src="{{img}}">
+            <div class="functions">
+            <div class="plus-func">
+            <i class="fa fa-plus"></i>
+            </div>
+            <div class="view-count">
+            <i class="fa fa-eye"></i>
+            <span>{{views}}</span>
+            </div>
+            <div class="publish-time">
+            <i class="fa fa-clock-o"></i>
+            <span>{{createAt}}</span>
+            </div>
+            <div class="plus-count">
+            <i class="fa fa-plus"></i>
+            <span>{{like_number}}</span>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="info">
+            <img class="avatar-post" src="{{author.avatar}}">
+            <div class="title-post">
+            <div class="title">{{author.username}}</div>
+            <div class="sub-title">{{title}}</div>
+            </div>
+            </div>
+            <p class="description-post">
+            {{content}}
+        </p>
+        </div>
+        </div>
+        {{/each}}
+    </script>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script src="js/handlebars-v4.0.5.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

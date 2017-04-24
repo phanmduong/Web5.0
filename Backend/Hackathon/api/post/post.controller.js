@@ -11,6 +11,14 @@ var jwt = require('jsonwebtoken');
 var config = require('../../config')
 
 module.exports = {
+
+    all: function (req, res) {
+        Post.find().exec(function (err, data) {
+            if (err) res.json({status: false, message: err});
+            res.json({status: true, data: data[0]});
+        });
+    },
+
     getAll: function (req, res) {
         var user = req.user;
         Post.find().select('-updatedAt -__v')
